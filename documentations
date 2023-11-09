@@ -1,0 +1,39 @@
+to deploy
+
+pip install -r requirements.txt
+
+-------
+in INSTALLED APPS
+"rest_framework_simplejwt.token_blacklist", this is for dont let use the token again for segurity
+
+----------
+gerenate 
+and
+hidde your secret key
+
+------
+conf of static files
+
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "dist/static"),
+]
+MEDIA_URL = "media/"
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+---
+
+
+CORS CONF
+
+
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:5173",     for vite apps
+]
+
+
+----------------
+
+
+
+
